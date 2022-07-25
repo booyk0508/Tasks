@@ -50,7 +50,7 @@ file1 = open("output.txt","r+")
   
 print("Output of Read function is ")
 text_1 = file1.read()
-text_1
+print(text_1)
 
 import gensim
 from gensim.models import word2vec
@@ -131,10 +131,10 @@ txtt = sent_tokenize(text_1)
 txt = word_tokenize(text_1)
 
 tt = ["experience proves this"]
-txtt
+print(txtt)
 
 ss = sia.polarity_scores(tt[0])
-ss
+print(ss)
 
 for sentence in tt:
   #bb=  sia.polarity_scores(sentence)
@@ -191,7 +191,7 @@ with sr.AudioFile("/content/drive/MyDrive/AamirKhan_6.wav") as source:
 
   text = r.recognize_google(audio_text,language ="hi-IN")
 
-text
+print(text)
 
 !pip install translators
 
@@ -199,4 +199,5 @@ import translators as ts
 ts.google
 
 ts._google.language_map
-ts.google(text, from_language='hi', to_language='en')
+translation = ts.google(text, from_language='hi', to_language='en')
+print(translation)
