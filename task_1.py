@@ -19,13 +19,6 @@ import soundfile as sf
 import numpy as np
 import pandas as pd
 
-#nvm
-song = ipd.YouTubeVideo("toEW7_-pvOY")
-song2 = ipd.YouTubeVideo("NgsWGfUlwJI")
-
-
-display(song)
-display(song2)
 
 """here we import model"""
 
